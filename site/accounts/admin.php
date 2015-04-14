@@ -7,3 +7,5 @@ password: >
 language: en
 role: admin
 token: d4a2b82cc54f374e9c2336173a9f4d89cf76f47c
+history:
+  - home

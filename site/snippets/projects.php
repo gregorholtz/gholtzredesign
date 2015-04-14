@@ -1,4 +1,4 @@
-<h2>Latest projects</h2>
+<!-- <h2>Latest projects</h2>
 
 <ul class="teaser cf">
   <?php foreach(page('projects')->children()->visible()->limit(3) as $project): ?>
@@ -12,4 +12,4 @@
     <?php endif ?>
   </li>
   <?php endforeach ?>
-</ul>
+</ul> -->

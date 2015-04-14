@@ -11,7 +11,7 @@ module.exports = function (grunt) {
         tasks: ['uglify']
       },
       styles: {
-        files: ['assets/sass/**/*.{scss,sass}'],
+        files: ['assets/scss/**/*.{scss,sass}'],
         tasks: ['sass', 'autoprefixer']
       },
     },

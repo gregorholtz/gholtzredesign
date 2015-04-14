@@ -11,6 +11,9 @@ Email:  support@getkirby.com
 
 /* Source Sans Pro
 -------------------------------------------------- */
+
+@import "styles";
+@import "home";
 @font-face {
   font-family: 'Source Sans Pro';
   font-style: normal;
@@ -94,8 +97,7 @@ body {
   margin: 0 auto;
   font-size: 1.25em;
   line-height: 1.5em;
-  padding: 1.5em;
-  max-width: 50em;
+  padding: 1em;
   background: #fff;
   color: #222;
 }
@@ -120,7 +122,8 @@ body {
 -------------------------------------------------- */
 .menu a {
   display: block;
-  color: #222;
+  color: $white;
+  text-shadow: 1px 1px black;
 }
 .menu a:hover {
   color: red;
@@ -175,7 +178,7 @@ body {
 
 @media screen and (min-width: 40em) {
   body {
-    padding: 3em;
+    padding: 1em;
   }
   .logo {
     float: left;

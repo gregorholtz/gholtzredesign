@@ -10,9 +10,10 @@
   <meta name="keywords" content="<?php echo $site->keywords()->html() ?>">
 
   <?php echo css('assets/css/main.css') ?>
+  <?php echo js('assets/js/app.min.js') ?>
 
 </head>
-<body>
+<body class="<?php echo $page->template() ?>">
 
   <header class="header cf" role="banner">
     <a class="logo" href="<?php echo url() ?>">
