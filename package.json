@@ -1,0 +1,20 @@
+{
+  "name": "gholtz-2015",
+  "version": "1.0.0",
+  "description": "_s ===",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "hello@gregorholtz.com",
+  "license": "GNU",
+  "private": true,
+  "devDependencies": {
+    "grunt-contrib-sass": "^0.6.0",
+    "load-grunt-tasks": "^0.2.1",
+    "grunt-contrib-uglify": "^0.4.0",
+    "grunt-contrib-watch": "^0.5.3",
+    "grunt": "~0.4.2",
+    "grunt-autoprefixer": "^0.6.5"
+  }
+}
