@@ -5,6 +5,18 @@
   height: 100%;
   z-index: 5000;
   display: none;
+
+  nav {
+    float: left;
+  }
+
+}
+
+.toggle {
+  float: right;
+  color: $white;
+  font-size: $base-font-size*3;
+  cursor: pointer;
 }
 
 #popup-menu.open {

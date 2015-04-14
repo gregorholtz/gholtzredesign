@@ -20,9 +20,13 @@
 
   <div id="popup-menu">
 
+    <div class="outer-container">
+
     <?php snippet('menu') ?>
 
-    <p class="toggle">X</p>
+    <div class="toggle">&#215</div>
+
+  </div>
 
   </div>
 
@@ -32,5 +36,5 @@
     <a class="logo" href="<?php echo url() ?>">
       <img src="<?php echo url('assets/images/logo.svg') ?>" alt="<?php echo $site->title()->html() ?>" />
     </a>
-    <p class="toggle">X</p>
+    <div class="toggle">=</div>
   </header>
