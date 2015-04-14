@@ -1,8 +1,19 @@
 body.home {
 
+  @media screen and (max-width: 800px) {
+    background: url(../images/8bitportrait.png) #000 no-repeat center center fixed; 
+  }
+
+  .menu {
+    a {
+      color: $white;
+      text-shadow: 1px 1px $black;
+    }
+  }
+
   main {
     color: $white;
-    text-shadow: 1px 1px $black;
+    text-shadow: 2px 2px $black;
   }
 
   // Full screen video styles
@@ -10,12 +21,12 @@ body.home {
   position: fixed; right: 0; bottom: 0;
   min-width: 100%; min-height: 100%;
   width: auto; height: auto; z-index: -100;
-  background: url(../../assets/images/8bitportrait.png) no-repeat;
+  background: url(../images/8bitportrait.png) no-repeat;
   background-size: cover;
   }
 
   @media screen and (max-width: 800px) {
-  body { background: url(../../assets/images/8bitportrait.png) #000 no-repeat center center fixed; }
+  body { background: url(../images/8bitportrait.png) #000 no-repeat center center fixed; }
   #bgvid { display: none; }
   }
 }
