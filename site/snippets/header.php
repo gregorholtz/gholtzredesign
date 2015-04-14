@@ -10,14 +10,27 @@
   <meta name="keywords" content="<?php echo $site->keywords()->html() ?>">
 
   <?php echo css('assets/css/main.css') ?>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <?php echo js('assets/js/app.min.js') ?>
 
 </head>
+
 <body class="<?php echo $page->template() ?>">
+
+  <div id="popup-menu">
+
+    <?php snippet('menu') ?>
+
+    <p class="toggle">X</p>
+
+  </div>
+
+  <div class="outer-container">
 
   <header class="header cf" role="banner">
     <a class="logo" href="<?php echo url() ?>">
       <img src="<?php echo url('assets/images/logo.svg') ?>" alt="<?php echo $site->title()->html() ?>" />
     </a>
-    <?php snippet('menu') ?>
+    <p class="toggle">X</p>
   </header>

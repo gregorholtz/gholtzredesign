@@ -14,6 +14,7 @@ Email:  support@getkirby.com
 
 @import "styles";
 @import "home";
+@import "menu";
 @font-face {
   font-family: 'Source Sans Pro';
   font-style: normal;
@@ -93,13 +94,9 @@ html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
-body {
-  margin: 0 auto;
-  font-size: 1.25em;
-  line-height: 1.5em;
-  padding: 1em;
-  background: #fff;
-  color: #222;
+
+.outer-container {
+  padding: 2em;
 }
 
 
@@ -176,9 +173,6 @@ body {
 }
 
 @media screen and (min-width: 40em) {
-  body {
-    padding: 1em;
-  }
   .logo {
     float: left;
   }
