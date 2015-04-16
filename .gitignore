@@ -1,6 +1,8 @@
 node_modules/*
 assets/css/app.css
 assets/css/app.css.map
+assets/css/main.css
+assets/css/main.css.map
 assets/js/app.min.map
 assets/js/app.min.js
 .htaccess

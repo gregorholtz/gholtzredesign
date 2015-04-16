@@ -12,7 +12,11 @@
       <?php echo $page->text()->kirbytext() ?>
     </div>
 
-    <hr>
+    <a href="#">
+      <div class="interested">
+        <h2>Interested?</h2>
+      </div>
+    </a>
 
     <?php snippet('projects') ?>
 
