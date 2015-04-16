@@ -6,3 +6,23 @@ $base-font-size: 16px;
 $white: #fff;
 $black: #000;
 $green: #00FF66;
+
+// Breakpoint mixins
+@mixin bp($point) {
+	// assume that the default is 'small'
+	// usage: @include bp(large) { ... }
+	@if $point == tablet { // 641px, 1024px
+		@media only screen and (min-width: 700px) { @content; }
+	}
+	@else if $point == large { // 1025px, 1440px
+		@media only screen and (min-width: 1000px) { @content; }
+	}
+	@else if $point == retina {
+		@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+		only screen and (min--moz-device-pixel-ratio: 1.5),
+		only screen and (min-device-pixel-ratio: 1.5) { @content; }
+	}
+	@else {
+		@media (min-width: $point) { @content }
+	}
+}

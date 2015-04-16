@@ -12,6 +12,11 @@ body.home {
       margin-top: 15%;
       h1 {
         text-shadow: 2px 2px $black;
+        font-size: 1.5em;
+
+        @include bp( tablet ){
+          font-size: 2em;
+        }
       }
     }
     .interested {
@@ -29,6 +34,7 @@ body.home {
       border-radius: 2px;
       &:hover {
         background-color: $green;
+        transition:background-color 0.5s ease-in-out;
 
         h2 {
           color: $white;
