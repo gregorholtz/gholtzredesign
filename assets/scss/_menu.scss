@@ -18,10 +18,12 @@
   color: $white;
   font-size: $base-font-size*3;
   cursor: pointer;
-  position: absolute;
-  right: 25px;
-  top: 10px;
-
+  float: right;
+  line-height: 1;
+  transition: color 0.5s ease;
+  @include bp (tablet){
+    line-height: 1.5;
+  }
   &:hover {
     color: $green;
   }

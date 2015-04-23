@@ -18,7 +18,7 @@
       </div>
     </a>
 
-    <?php snippet('projects') ?>
+    <!-- <?php snippet('projects') ?> -->
 
   </main>
 

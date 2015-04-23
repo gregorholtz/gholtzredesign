@@ -4,6 +4,16 @@ body.home {
     background: url(../images/8bitportrait.png) #000 no-repeat center center fixed;
   }
 
+  header {
+    .toggle {
+      color: $white;
+      transition: color 0.5s ease;
+       &:hover {
+         color: $green;
+       }
+    }
+  }
+
   main {
     color: $white;
 
