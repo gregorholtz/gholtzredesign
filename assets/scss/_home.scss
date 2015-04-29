@@ -1,10 +1,5 @@
 body.home {
 
-  @media screen and (max-width: 800px) {
-    background: url(../images/placeholder.jpg) #000 no-repeat center center fixed;
-    background-size: cover;
-  }
-
   header {
     .toggle {
       color: $white;
@@ -71,7 +66,8 @@ body.home {
   }
 
   @media screen and (max-width: 800px) {
-  body { background: url(../images/8bitportrait.png) #000 no-repeat center center fixed; }
-  #bgvid { display: none; }
+    background: url(../images/mobile_placeholder.jpg) #000 no-repeat center center fixed;
+    background-size: cover;
+    #bgvid { display: none; }
   }
 }
