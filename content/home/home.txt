@@ -1,5 +1,0 @@
-Title: Home
-
-----
-
-Text: # This is test text. For testing!
