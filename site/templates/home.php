@@ -1,6 +1,6 @@
 <?php snippet('header') ?>
 
-  <video autoplay loop poster="<?php echo url('assets/images/8bitportrait.png') ?>" id="bgvid">
+  <video autoplay loop poster="<?php echo url('assets/images/placeholder.jpg') ?>" id="bgvid">
   <source src="<?php echo url('assets/images/gholtz.webm') ?>" type="video/webm">
   <source src="<?php echo url('assets/images/gholtz.mp4') ?>" type="video/mp4">
   </video>
@@ -18,7 +18,6 @@
       </div>
     </a>
 
-    <!-- <?php snippet('projects') ?> -->
 
   </main>
 

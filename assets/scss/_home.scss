@@ -1,7 +1,8 @@
 body.home {
 
   @media screen and (max-width: 800px) {
-    background: url(../images/8bitportrait.png) #000 no-repeat center center fixed;
+    background: url(../images/placeholder.jpg) #000 no-repeat center center fixed;
+    background-size: cover;
   }
 
   header {
