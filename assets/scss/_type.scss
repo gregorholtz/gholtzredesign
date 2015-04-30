@@ -1,0 +1,12 @@
+// Type
+
+$base-font-size: 16px;
+
+.text {
+	max-width: 95%;
+	margin: 0 auto;
+
+	@include bp (tablet) {
+		max-width: 75%;
+	}
+}

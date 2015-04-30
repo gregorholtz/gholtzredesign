@@ -13,6 +13,7 @@ Email:  support@getkirby.com
 -------------------------------------------------- */
 
 @import "styles";
+@import "type";
 @import "home";
 @import "menu";
 @font-face {
@@ -102,8 +103,6 @@ html {
 
 .outer-container {
   padding: 2em;
-  max-width: 1000px;
-  margin: 0 auto;
 }
 
 
@@ -246,7 +245,8 @@ h1 a, h2 a, h3 a, h4 a {
 -------------------------------------------------- */
 .main {
   padding-bottom: 1.5em;
-//  border-bottom: 2px solid red;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 .main hr {
   margin: 3em 0;
