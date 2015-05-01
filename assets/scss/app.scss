@@ -14,6 +14,7 @@ Email:  support@getkirby.com
 
 @import "styles";
 @import "type";
+@import "pages";
 @import "home";
 @import "menu";
 @font-face {
@@ -245,7 +246,6 @@ h1 a, h2 a, h3 a, h4 a {
 -------------------------------------------------- */
 .main {
   padding-bottom: 1.5em;
-  max-width: 1200px;
   margin: 0 auto;
 }
 .main hr {
