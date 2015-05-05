@@ -1,0 +1,67 @@
+/* Project meta
+-------------------------------------------------- */
+.meta {
+  margin-bottom: 1.5em;
+}
+.meta li {
+  float: left;
+  list-style: none;
+  margin-right: 2em;
+  color: $green;
+}
+.meta li b {
+  font-weight: 400;
+  color: #000;
+  padding-right: .25em;
+}
+
+
+/* Project teaser
+-------------------------------------------------- */
+.teaser {
+  list-style: none;
+}
+.teaser li {
+  margin-bottom: 1.5em;
+  list-style: none;
+  //height: 350px;
+  overflow: hidden;
+
+  &:nth-child(2n+1){
+    margin-left: 0;
+  }
+
+  &:nth-child(2n){
+    clear: right;
+  }
+
+  &:nth-child(2n+1){
+    clear: left;
+  }
+}
+@media screen and (min-width: 50em) {
+  .teaser li {
+    float: left;
+    width: 47%;
+    margin-left: 5%;
+  }
+  .teaser li:first-child {
+    margin-left: 0;
+  }
+}
+
+
+/* Next/Prev nav
+-------------------------------------------------- */
+.nextprev {
+  padding: 1em 0;
+}
+.nextprev a {
+  border: 0;
+}
+.nextprev .prev {
+  float: left;
+}
+.nextprev .next {
+  float: right;
+}
