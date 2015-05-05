@@ -1,6 +1,14 @@
 body.home {
 
   header {
+    position: absolute;
+    width: 100%;
+    padding: 1em;
+    z-index: 10;
+
+    @include bp ( tablet ){
+      padding: 2em;
+    }
     .toggle {
       color: $white;
       transition: color 0.5s ease;
@@ -14,8 +22,13 @@ body.home {
     color: $white;
 
     .text {
-      text-align: center;
-      margin-top: 5%;
+      max-width: 95%;
+      margin: 0 auto;
+      padding: 3em 1em;
+      @include bp( tablet ){
+        max-width: 75%;
+        padding: 3em 0em;
+      }
       h1 {
         text-shadow: 2px 2px $black;
         font-size: 1.5em;
@@ -24,6 +37,14 @@ body.home {
           font-size: 2em;
         }
       }
+
+      h2 {
+        font-weight: 600;
+      }
+    }
+
+    .text#splash {
+      padding-top: 50vh;
     }
     .interested {
       border: 2px solid $green;
@@ -54,24 +75,96 @@ body.home {
       }
     }
   }
+  #video_block {
+    position: relative;
+    height: 100vh;
+    // Full screen video styles
+    video#bgvid {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height:
+    auto;
+    z-index: -100;
+    opacity: .5;
+    }
+  }
 
-  // Full screen video styles
-  video#bgvid {
-  position: fixed; 
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height:
-  auto;
-  z-index: -100;
-  opacity: .5;
+  #philosophy {
+    background-color: $green;
+    box-shadow: 0px 8px rgba(0,0,0,.5);
+  }
+
+  .pillar_wrapper {
+  //  background-color: rgba(0,255,102,.2);
+  }
+
+  #pillars {
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 5em 0;
+    overflow: auto;
+    color: $black;
+
+    @include bp (tablet) {
+  		max-width: 75%;
+  	}
+
+    .pillar {
+      background-color: $white;
+      width: 95%;
+      margin-top: 5%;
+      border-bottom: 5px solid $black;
+      margin: 2% auto;
+
+      @include bp ( tablet ){
+        width: 47%;
+        float: left;
+
+        &:nth-child(2n){
+          margin-left: 2%;
+          clear: right;
+        }
+        &:nth-child(2n+1){
+          margin-right: 2%;
+          clear: left;
+        }
+
+        p {
+          padding-bottom: 0;
+        }
+      }
+
+      img {
+        margin-bottom: 4%;
+      }
+
+      h2, p {
+        padding: 0 5%;
+      }
+
+      p {
+        padding-bottom: 10%;
+      }
+    }
+
   }
 
   @media screen and (max-width: 800px) {
     background: url(../images/mobile_placeholder.jpg) #000 no-repeat center center fixed;
     background-size: cover;
     #bgvid { display: none; }
+  }
+
+  .inner-container {
+    max-width: 100%;
+  	margin: 0 auto;
+
+  	@include bp (tablet) {
+  		max-width: 100%;
+  	}
   }
 }

@@ -1,0 +1,49 @@
+/* Footer
+-------------------------------------------------- */
+.footer {
+  padding: 1em;
+  font-size: .8em;
+  background-color: $green;
+
+  .footer-container {
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 1em 0;
+    overflow: auto;
+
+    @include bp ( tablet ){
+      max-width: 75%;
+    }
+
+    svg {
+      width: 75px;
+      height: 100%;
+      float: left;
+    }
+
+    .footer-text {
+      display: inline-block;
+      margin-left: 3%;
+      margin-top: 2%;
+      float: left;
+
+      a {
+        text-decoration: underline;
+
+        &:hover {
+          color: $white;
+        }
+      }
+    }
+  }
+}
+.copyright {
+  float: left;
+}
+.colophon {
+  float: right;
+}
+.colophon a b {
+  color: $green;
+  padding-left: .25em;
+}
