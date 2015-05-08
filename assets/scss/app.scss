@@ -44,10 +44,28 @@ Email:  support@getkirby.com
   src: url(../fonts/sourcesanspro-400-italic.woff) format('woff');
 }
 @font-face {
-  font-family: 'Old Standard';
+  font-family: 'Din Rounded';
+  font-style: normal;
+  font-weight: 600;
+  src: url(../fonts/DINNextRoundedLTPro-Bold.woff) format('woff');
+}
+@font-face {
+  font-family: 'Din Next';
   font-style: normal;
   font-weight: 400;
-  src: url(../fonts/OldStandard-Regular.ttf) format('ttf');
+  src: url(../fonts/DINNextLTPro-Medium.woff) format('woff');
+}
+@font-face {
+  font-family: 'Din Next';
+  font-style: italic;
+  font-weight: 400;
+  src: url(../fonts/DINNextLTPro-MediumItalic.woff) format('woff');
+}
+@font-face {
+  font-family: 'Din Next';
+  font-style: normal;
+  font-weight: 600;
+  src: url(../fonts/DINNextRoundedLTPro-Bold.woff) format('woff');
 }
 
 /* Reset
@@ -99,7 +117,7 @@ a:hover {
 -------------------------------------------------- */
 html {
   height: 101%;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Din Next", sans-serif;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }

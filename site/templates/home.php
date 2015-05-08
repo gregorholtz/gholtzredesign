@@ -22,7 +22,7 @@
 
         <div class="text">
 
-          <h3>Why bother?</h3>
+          <h2>Why bother?</h2>
 
           <p>Encyclopaedia galactica. A mote of dust suspended in a sunbeam preserve and cherish that pale blue dot paroxysm of global death science rich in heavy atoms another world rich in mystery? Light years muse about, birth a very small stage in a vast cosmic arena. Citizens of distant epochs science encyclopaedia galactica, take root and flourish. Ship of the imagination, from which we spring cosmos culture white dwarf stirred by starlight. Circumnavigated, encyclopaedia galactica, across the centuries. Venture corpus callosum.
           </p>
