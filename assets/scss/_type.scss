@@ -1,12 +1,14 @@
 // Type
 
-$base-font-size: 16px;
-
-.text {
-	// max-width: 95%;
-	// margin: 0 auto;
-	//
-	// @include bp (tablet) {
-	// 	max-width: 75%;
-	// }
+h1 {
+	font-family: "Din Rounded", sans-serif;
+	color: $green;
 }
+
+h2 {
+	font-family: "Din Next", sans-serif;
+	font-weight: 400;
+	
+}
+
+$base-font-size: 16px;

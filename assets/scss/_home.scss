@@ -25,23 +25,31 @@ body.home {
       max-width: 95%;
       margin: 0 auto;
       padding: 3em 1em;
+      color: $black;
       @include bp( tablet ){
         max-width: 75%;
         padding: 3em 0em;
       }
-      h1 {
-        text-shadow: 2px 2px $black;
-        font-size: 1.5em;
-        font-family: "Din Rounded", sans-serif;
 
-        @include bp( tablet ){
-          font-size: 2em;
-        }
+      h1 {
+      	font-size: 1.5em;
+      	font-family: "Din Rounded", sans-serif;
+      	color: $green;
+      	margin-bottom: 0;
+
+      	@include bp( tablet ){
+      		font-size: 4em;
+      	}
       }
 
       h2 {
-        font-weight: 600;
+        font-size: 1.5em;
+
+      	@include bp( tablet ){
+      		font-size: 2em;
+      	}
       }
+
     }
 
     .text#splash {
@@ -92,6 +100,11 @@ body.home {
     z-index: -100;
     opacity: .5;
     }
+
+    h2 {
+      text-shadow: 2px 2px $black;
+      color: $white;
+    }
   }
 
   #philosophy {
@@ -104,63 +117,44 @@ body.home {
     }
   }
 
-  .pillar_wrapper {
-  //  background-color: rgba(0,255,102,.2);
-  }
-
-  #pillars {
-    max-width: 95%;
-    margin: 0 auto;
-    padding: 5em 0;
+  #project_blocks {
     overflow: auto;
-    color: $black;
 
-    @include bp (tablet) {
-  		max-width: 75%;
-  	}
+    .project {
+      width: 100%;
 
-    .pillar {
-      background-color: $white;
-      width: 95%;
-      margin-top: 5%;
-      border-bottom: 5px solid $black;
-      margin: 5% auto;
+      .caption {
+        position: absolute;
+        visibility: hidden;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: rgba(35,31,32, .7);
+        padding: 1em;
 
-      @include bp ( tablet ){
-        width: 47%;
+        h4 {
+          margin-bottom: 0;
+        }
+
+
+      }
+
+      @include bp (tablet) {
+        width: 50%;
         float: left;
-        margin: 2% auto;
+        position: relative;
 
-        &:nth-child(2n){
-          margin-left: 2%;
-          clear: right;
+        &:hover {
+
+          .caption {
+            visibility: visible;
+          }
         }
-        &:nth-child(2n+1){
-          margin-right: 2%;
-          clear: left;
-        }
-
-        p {
-          padding-bottom: 0;
-        }
-      }
-
-      img {
-        margin-bottom: 4%;
-      }
-
-      h2, p {
-        padding: 0 5%;
-      }
-
-      p {
-        padding-bottom: 5%;
       }
     }
-
   }
 
-  @media screen and (max-width: 800px) {
+  @media screen only and (max-width: 800px) {
     background: url(../images/mobile_placeholder.jpg) #000 no-repeat center center fixed;
     background-size: cover;
     #bgvid { display: none; }
@@ -173,5 +167,9 @@ body.home {
   	@include bp (tablet) {
   		max-width: 100%;
   	}
+  }
+
+  .white {
+    color: $white;
   }
 }

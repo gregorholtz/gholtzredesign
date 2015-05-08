@@ -22,48 +22,72 @@
 
         <div class="text">
 
-          <h2>Why bother?</h2>
-
-          <p>Encyclopaedia galactica. A mote of dust suspended in a sunbeam preserve and cherish that pale blue dot paroxysm of global death science rich in heavy atoms another world rich in mystery? Light years muse about, birth a very small stage in a vast cosmic arena. Citizens of distant epochs science encyclopaedia galactica, take root and flourish. Ship of the imagination, from which we spring cosmos culture white dwarf stirred by starlight. Circumnavigated, encyclopaedia galactica, across the centuries. Venture corpus callosum.
-          </p>
+          <h2>Nostalgia. Playfulness.</h2>
+          <h2>Experimentation. Simplicity.</h2>
 
         </div>
 
       </div>
 
-      <div class="pillar_wrapper">
+      <div class="text">
 
-        <div id="pillars">
+        <h2>Welcome to the tone zone.</h2>
 
-          <div class="pillar" id="simplicity">
+        <p>
+          Citizens of distant epochs quasar extraplanetary, rich in mystery! Inconspicuous motes of rock and gas Tunguska event astonishment circumnavigated worldlets, bits of moving fluff, brain is the seed of intelligence prime number, muse about laws of physics dispassionate extraterrestrial observer Rig Veda Hypatia, circumnavigated.
+        </p>
+
+      </div>
+
+      <div id="project_blocks">
+
+        <a href="#">
+          <div class="project">
             <img src="<?php echo url('assets/images/desktop_placeholder.jpg') ?>">
-            <h2>Simplicity</h2>
-            <p>Billions upon billions inconspicuous motes of rock and gas Tunguska event circumnavigated kindling the energy hidden in matter made in the interiors of collapsing stars, as a patch of light stirred by starlight. Rich in mystery at the edge of forever?
-            </p>
+            <div class="caption">
+              <h4>Caption</h4>
+            </div>
           </div>
+        </a>
 
-          <div class="pillar" id="experimentation">
+        <a href="#">
+          <div class="project">
             <img src="<?php echo url('assets/images/desktop_placeholder.jpg') ?>">
-            <h2>Experimentation</h2>
-            <p>Billions upon billions inconspicuous motes of rock and gas Tunguska event circumnavigated kindling the energy hidden in matter made in the interiors of collapsing stars, as a patch of light stirred by starlight. Rich in mystery at the edge of forever?
-            </p>
+            <div class="caption">
+              <h4>Caption</h4>
+            </div>
           </div>
+        </a>
 
-          <div class="pillar" id="nostalgia">
+        <a href="#">
+          <div class="project">
             <img src="<?php echo url('assets/images/desktop_placeholder.jpg') ?>">
-            <h2>Nostalgia</h2>
-            <p>Billions upon billions inconspicuous motes of rock and gas Tunguska event circumnavigated kindling the energy hidden in matter made in the interiors of collapsing stars, as a patch of light stirred by starlight. Rich in mystery at the edge of forever?
-            </p>
+            <div class="caption">
+              <h4>Caption</h4>
+            </div>
           </div>
+        </a>
 
-          <div class="pillar" id="playfullness">
+        <a href="#">
+          <div class="project">
             <img src="<?php echo url('assets/images/desktop_placeholder.jpg') ?>">
-            <h2>Playfulness</h2>
-            <p>Billions upon billions inconspicuous motes of rock and gas Tunguska event circumnavigated kindling the energy hidden in matter made in the interiors of collapsing stars, as a patch of light stirred by starlight. Rich in mystery at the edge of forever?
-            </p>
+            <div class="caption">
+              <h4>Caption</h4>
+            </div>
           </div>
+        </a>
 
-        </div>
+      </div>
+
+      <div class="text">
+
+        <h2>Welcome to the tone zone.</h2>
+
+        <p>
+          Citizens of distant epochs quasar extraplanetary, rich in mystery! Inconspicuous motes of rock and gas Tunguska event astonishment circumnavigated worldlets, bits of moving fluff, brain is the seed of intelligence prime number, muse about laws of physics dispassionate extraterrestrial observer Rig Veda Hypatia, circumnavigated.
+        </p>
+
+        <img src="<?php echo url('assets/images/concept.png') ?>">
 
       </div>
 
