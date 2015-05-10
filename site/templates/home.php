@@ -22,72 +22,74 @@
 
         <div class="text">
 
-          <h2>Nostalgia. Playfulness.</h2>
-          <h2>Experimentation. Simplicity.</h2>
+          <h2>Part Developer. Part UI/UX Designer. Part Copywriter. All about the story.</h2>
 
         </div>
 
       </div>
 
-      <div class="text">
+      <div id="intro_paragraph">
 
-        <h2>Welcome to the tone zone.</h2>
+        <div class="text">
 
-        <p>
-          Citizens of distant epochs quasar extraplanetary, rich in mystery! Inconspicuous motes of rock and gas Tunguska event astonishment circumnavigated worldlets, bits of moving fluff, brain is the seed of intelligence prime number, muse about laws of physics dispassionate extraterrestrial observer Rig Veda Hypatia, circumnavigated.
-        </p>
+          <h2>Welcome to the tone zone.</h2>
+
+          <p>
+            Citizens of distant epochs quasar extraplanetary, rich in mystery! Inconspicuous motes of rock and gas Tunguska event astonishment circumnavigated worldlets, bits of moving fluff, brain is the seed of intelligence prime number, muse about laws of physics dispassionate extraterrestrial observer Rig Veda Hypatia, circumnavigated.
+          </p>
+
+        </div>
 
       </div>
 
       <div id="project_blocks">
 
-        <a href="#">
-          <div class="project">
-            <img src="<?php echo url('assets/images/desktop_placeholder.jpg') ?>">
+        <a href="work/sigmunds-quest">
+          <div class="project" style="background-image: url('<?php echo url('content/2-work/1-sigmunds-quest/swordup_main.png') ?>');">
             <div class="caption">
-              <h4>Caption</h4>
+              <h4>Sigmund's Quest</h4>
             </div>
           </div>
         </a>
 
-        <a href="#">
-          <div class="project">
-            <img src="<?php echo url('assets/images/desktop_placeholder.jpg') ?>">
+        <a href="work/polybius">
+          <div class="project" style="background-image: url('<?php echo url('content/2-work/2-polybius/polybius.jpg') ?>');">
             <div class="caption">
-              <h4>Caption</h4>
+              <h4>Project POLYBIUS</h4>
             </div>
           </div>
         </a>
 
-        <a href="#">
-          <div class="project">
-            <img src="<?php echo url('assets/images/desktop_placeholder.jpg') ?>">
+        <a href="work/serene-alliance">
+          <div class="project" style="background-image: url('<?php echo url('content/2-work/serene-alliance/literature_pages.jpg') ?>');">
             <div class="caption">
-              <h4>Caption</h4>
+              <h4>The Serene Alliance for Peace</h4>
             </div>
           </div>
         </a>
 
-        <a href="#">
-          <div class="project">
-            <img src="<?php echo url('assets/images/desktop_placeholder.jpg') ?>">
+        <a href="work/fuckin-booze">
+          <div class="project" style="background-image: url('<?php echo url('content/2-work/fuckin-booze/booklet2.jpg') ?>');">
             <div class="caption">
-              <h4>Caption</h4>
+              <h4>Fuckin' Booze</h4>
             </div>
           </div>
         </a>
 
       </div>
 
-      <div class="text">
+      <div id="concept_block">
 
-        <h2>Welcome to the tone zone.</h2>
+        <div class="text">
 
-        <p>
-          Citizens of distant epochs quasar extraplanetary, rich in mystery! Inconspicuous motes of rock and gas Tunguska event astonishment circumnavigated worldlets, bits of moving fluff, brain is the seed of intelligence prime number, muse about laws of physics dispassionate extraterrestrial observer Rig Veda Hypatia, circumnavigated.
-        </p>
+          <h2>It can get messy, but concept is always king.</h2>
+          <p>
+            Citizens of distant epochs quasar extraplanetary, rich in mystery! Inconspicuous motes of rock and gas Tunguska event astonishment circumnavigated worldlets, bits of moving fluff, brain is the seed of intelligence prime number, muse about laws of physics dispassionate extraterrestrial observer Rig Veda Hypatia, circumnavigated.
+          </p>
 
-        <img src="<?php echo url('assets/images/concept.png') ?>">
+          <img src="<?php echo url('assets/images/concept.png') ?>">
+
+        </div>
 
       </div>
 

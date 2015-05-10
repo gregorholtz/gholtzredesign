@@ -1,7 +1,7 @@
 <h2>TAKE A GANDER</h2>
 
 <ul class="teaser cf">
-  <?php foreach(page('projects')->children() as $project): ?>
+  <?php foreach(page('work')->children() as $project): ?>
   <li>
     <h3><a href="<?php echo $project->url() ?>"><?php echo $project->title()->html() ?></a></h3>
     <p><?php echo $project->text()->excerpt(80) ?> <a href="<?php echo $project->url() ?>">read&nbsp;more&nbsp;→</a></p>
