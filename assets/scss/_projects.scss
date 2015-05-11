@@ -20,12 +20,29 @@
 -------------------------------------------------- */
 .teaser {
   list-style: none;
+
+  .work_image {
+    height: 200px;
+    background-size: cover;
+    background-position: center center;
+    transition: opacity .5s ease;
+
+    @include bp (tablet) {
+      height: 300px;
+
+      &:hover {
+        opacity: .5;
+      }
+    }
+  }
 }
 .teaser li {
   margin-bottom: 1.5em;
   list-style: none;
   //height: 350px;
   overflow: hidden;
+  padding-bottom: 2em;
+  border-bottom: 2px solid $green;
 
   &:nth-child(2n+1){
     margin-left: 0;
@@ -39,11 +56,12 @@
     clear: left;
   }
 }
-@media screen and (min-width: 50em) {
+@include bp (tablet) {
   .teaser li {
     float: left;
     width: 47%;
     margin-left: 5%;
+    border-bottom: none;
   }
   .teaser li:first-child {
     margin-left: 0;
@@ -64,4 +82,12 @@
 }
 .nextprev .next {
   float: right;
+}
+
+body.project {
+  .main {
+    img {
+      width: 100%;
+    }
+  }
 }

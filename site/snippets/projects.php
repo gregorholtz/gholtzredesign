@@ -1,5 +1,3 @@
-<h2>TAKE A GANDER</h2>
-
 <ul class="teaser cf">
   <?php foreach(page('work')->children() as $project): ?>
   <li>
@@ -7,7 +5,8 @@
     <p><?php echo $project->text()->excerpt(80) ?> <a href="<?php echo $project->url() ?>">read&nbsp;more&nbsp;→</a></p>
     <?php if($image = $project->images()->sortBy('sort', 'asc')->first()): ?>
     <a href="<?php echo $project->url() ?>">
-      <img src="<?php echo $image->url() ?>" alt="<?php echo $project->title()->html() ?>" >
+      <div class="work_image" style="background-image: url('<?php echo $image->url() ?>');">
+      </div>
     </a>
     <?php endif ?>
   </li>

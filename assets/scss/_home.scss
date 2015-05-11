@@ -10,10 +10,9 @@ body.home {
       padding: 2em;
     }
     .toggle {
-      color: $white;
       transition: color 0.5s ease;
        &:hover {
-         color: $green;
+         color: $black;
        }
     }
   }
@@ -32,7 +31,7 @@ body.home {
       }
 
       h1 {
-      	font-size: 1.5em;
+      	font-size: 2em;
       	font-family: "Din Rounded", sans-serif;
       	color: $green;
       	margin-bottom: 0;
@@ -143,11 +142,13 @@ body.home {
         bottom: 0;
         width: 100%;
         background-color: rgba(35,31,32, .7);
-        padding: 1em;
         transition: opacity .5s ease;
 
         h4 {
           margin-bottom: 0;
+          max-width: 95%;
+          margin: 0 auto;
+          padding: 1em;
         }
 
 
@@ -173,6 +174,11 @@ body.home {
 
   #concept_block {
     background-color: $white;
+
+    span {
+      font-style: italic;
+      color: $green;
+    }
   }
 
   .inner-container {
