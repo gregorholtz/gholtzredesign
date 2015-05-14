@@ -4,6 +4,8 @@
 
     <main class="main" role="main">
 
+      <a href="/work"><h5>&larr; more work</h5></a>
+
       <h1><?php echo $page->title()->html() ?></h1>
 
       <div class="text">

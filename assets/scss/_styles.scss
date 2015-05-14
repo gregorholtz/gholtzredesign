@@ -8,11 +8,15 @@ $green: #00FF66;
 	// assume that the default is 'small'
 	// usage: @include bp(large) { ... }
 	@if $point == tablet { // 641px, 1024px
-		@media only screen and (min-width: 700px) { @content; }
+		@media only screen and (min-width: 500px) { @content; }
+	}
+	@if $point == medium { // 641px, 1024px
+		@media only screen and (min-width: 950px) { @content; }
 	}
 	@else if $point == large { // 1025px, 1440px
-		@media only screen and (min-width: 1000px) { @content; }
+		@media only screen and (min-width: 1200px) { @content; }
 	}
+
 	@else if $point == retina {
 		@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
 		only screen and (min--moz-device-pixel-ratio: 1.5),

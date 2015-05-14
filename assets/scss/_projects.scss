@@ -22,12 +22,12 @@
   list-style: none;
 
   .work_image {
-    height: 200px;
+    height: 300px;
     background-size: cover;
     background-position: center center;
     transition: opacity .5s ease;
 
-    @include bp (tablet) {
+    @include bp (medium) {
       height: 300px;
 
       &:hover {
@@ -36,7 +36,7 @@
     }
   }
 }
-.teaser li {
+.teaser .project {
   margin-bottom: 1.5em;
   list-style: none;
   //height: 350px;
@@ -55,13 +55,21 @@
   &:nth-child(2n+1){
     clear: left;
   }
+
+  li:first-child {
+    height: 160px;
+
+    @include bp ( medium ) {
+      height: 200px;
+    }
+  }
 }
-@include bp (tablet) {
-  .teaser li {
+@include bp (medium) {
+  .teaser .project {
     float: left;
     width: 47%;
     margin-left: 5%;
-    border-bottom: none;
+    margin-bottom: 4em;
   }
   .teaser li:first-child {
     margin-left: 0;
@@ -85,9 +93,29 @@
 }
 
 body.project {
-  .main {
+  main {
+
+    .text, img {
+      margin: 2em 0;
+    }
+
     img {
       width: 100%;
     }
+
+    a {
+      border-bottom: 2px solid $black;
+
+      &:hover {
+        border-bottom: 2px solid $green;
+      }
+    }
+
+    h5 {
+      margin-bottom: 2em;
+      display: inline-block;
+
+    }
   }
+
 }

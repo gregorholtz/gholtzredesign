@@ -2,7 +2,35 @@
   max-width: 85%;
 	margin: 0 auto;
 
-	@include bp (tablet) {
-		max-width: 75%;
+	@include bp (medium) {
+		max-width: 65%;
 	}
+
+  @include bp (large) {
+		max-width: 45em;
+	}
+}
+
+// Styles for two column text
+
+.two-columns {
+  p:first-child {
+    float: left;
+    width: 47%;
+  }
+  p:nth-child(2) {
+    float: right;
+    width: 47%;
+    clear: right;
+  }
+}
+
+body.default {
+
+  main {
+    img {
+      width: 100%;
+    }
+  }
+
 }

@@ -8,18 +8,17 @@
   opacity:0;
   transition:visibility 0s linear 0.5s,opacity 0.5s linear;
 
-  nav {
-    float: left;
+  @include bp ( medium ) {
+
+    nav {
+      float: right;
+    }
+
+    .toggle {
+      float: right;
+    }
   }
 
-}
-
-header {
-  padding: 1em;
-
-  @include bp ( tablet ) {
-    padding: 2em;
-  }
 }
 
 .toggle {
@@ -29,7 +28,7 @@ header {
   float: right;
   line-height: 1;
   transition: color 0.5s ease;
-  @include bp (tablet){
+  @include bp (medium){
     line-height: 1.5;
   }
   &:hover {
@@ -41,4 +40,33 @@ header {
   visibility:visible;
   opacity:1;
   transition-delay:0s;
+}
+
+
+/* Header
+-------------------------------------------------- */
+.header {
+  padding: 1em;
+  margin-bottom: 1.5em;
+
+  @include bp ( medium ) {
+    padding: 2em;
+    background-color: transparent;
+  }
+
+  .toggle {
+    color: $green;
+  }
+}
+.logo {
+  display: block;
+  margin-bottom: 1.5em;
+  float: left;
+  svg {
+    width: 60px;
+    height: 100%;
+    @include bp (medium) {
+      width: 100px;
+    }
+  }
 }

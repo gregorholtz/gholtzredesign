@@ -121,34 +121,11 @@ html {
 .outer-container {
   padding: 1em;
 
-  @include bp (tablet) {
+  @include bp (medium) {
     padding: 2em;
   }
 }
 
-
-/* Header
--------------------------------------------------- */
-.header {
-  //border-bottom: 2px solid red;
-  margin-bottom: 1.5em;
-
-  .toggle {
-    color: $green;
-  }
-}
-.logo {
-  display: block;
-  margin-bottom: 1.5em;
-  float: left;
-  svg {
-    width: 60px;
-    height: 100%;
-    @include bp (tablet) {
-      width: 100px;
-    }
-  }
-}
 
 
 /* Navigation
@@ -229,10 +206,11 @@ html {
 /* Main
 -------------------------------------------------- */
 .main {
-  padding-bottom: 3em;
+  padding-bottom: 5em;
   margin: 0 auto;
 
 }
+
 .main hr {
   margin: 3em 0;
   height: 2px;
@@ -241,13 +219,13 @@ html {
 .main figure,
 .main ul,
 .main ol {
-  margin-bottom: 1.5em;
+  margin-bottom: 2em;
 }
 .main a {
-  border-bottom: 2px solid #ddd;
+  border-bottom: 2px solid $black;
 }
 .main a:hover {
-  border-color: #222;
+  border-color: $green;
 }
 
 /* Text blocks */

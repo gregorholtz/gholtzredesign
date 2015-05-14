@@ -34,8 +34,8 @@
 
       <div class="footer-text">
 
-        <p>thanks for stopping by</p>
-        <a href="mailto:hello@gholtz.com"><p>drop me a line</p></a>
+        <p>thanks for stopping by.</p>
+        <a href="mailto:hello@gholtz.com"><p>drop me a line.</p></a>
 
       </div>
     </div>

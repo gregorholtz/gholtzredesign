@@ -6,7 +6,7 @@ body.home {
     padding: 1em;
     z-index: 10;
 
-    @include bp ( tablet ){
+    @include bp ( medium ){
       padding: 2em;
     }
     .toggle {
@@ -19,15 +19,20 @@ body.home {
 
   main {
     color: $white;
+    padding-bottom: 0;
 
     .text {
       max-width: 95%;
       margin: 0 auto;
       padding: 3em 1em;
       color: $black;
-      @include bp( tablet ){
-        max-width: 75%;
-        padding: 3em 0em;
+      @include bp( medium ) {
+        max-width: 65%;
+        padding:6em 0em;
+      }
+
+      @include bp( large ) {
+        max-width: 45em;
       }
 
       h1 {
@@ -36,7 +41,7 @@ body.home {
       	color: $green;
       	margin-bottom: 0;
 
-      	@include bp( tablet ){
+      	@include bp( medium ) {
       		font-size: 4em;
       	}
       }
@@ -44,11 +49,41 @@ body.home {
       h2 {
         font-size: 1.5em;
 
-      	@include bp( tablet ){
+      	@include bp( medium ) {
       		font-size: 2em;
       	}
       }
 
+      blockquote {
+        p {
+          margin-top: 0;
+        }
+      }
+
+      a {
+        text-decoration: underline;
+      }
+
+      a:hover {
+        color: $black;
+      }
+
+      p:last-child {
+        margin-bottom: 0;
+      }
+
+    }
+
+    .text.bottom {
+      padding: 2em 1em;
+
+      @include bp ( medium ) {
+        padding: 2em 0;
+      }
+
+      h2 {
+        margin-bottom: 0;
+      }
     }
 
     .text#splash {
@@ -82,6 +117,19 @@ body.home {
         text-shadow: 1px 1px $white;
       }
     }
+
+    h2.featured {
+      width: 95%;
+      margin: 0 auto;
+
+      @include bp( medium ) {
+        max-width: 65%;
+      }
+
+      @include bp( large ) {
+        max-width: 45em;
+      }
+    }
   }
   #video_block {
     position: relative;
@@ -97,7 +145,6 @@ body.home {
     height:
     auto;
     z-index: -100;
-    opacity: .5;
     }
 
     h2 {
@@ -112,12 +159,43 @@ body.home {
     }
   }
 
-  #philosophy {
+  .green_block {
     background-color: $green;
     color: $black;
+    transition: all .5s ease;
+    position: relative;
 
     h2 {
       color: $white;
+    }
+
+  }
+
+  .green_block.featured {
+    // background-image: url('../images/pattern.jpg');
+    // background-size: cover;
+    // background-position: center center;
+    .text {
+      padding: 2em 1em;
+
+      @include bp ( medium ) {
+        padding: 2em 0;
+      }
+
+      h2 {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .picture_block {
+    background-image: url('../images/pattern.jpg');
+    background-size: cover;
+    background-position: center center;
+
+    h2 {
+      color: $white;
+      text-shadow: 2px 2px $black;
     }
   }
 
@@ -131,10 +209,11 @@ body.home {
 
     .project {
       width: 100%;
-      height: 200px;
+      height: 300px;
       background-size: cover;
       background-position: center center;
       position: relative;
+      transition: opacity .5s ease;
 
       .caption {
         position: absolute;
@@ -154,10 +233,15 @@ body.home {
 
       }
 
-      @include bp (tablet) {
+      @include bp (medium) {
         width: 50%;
         height: 400px;
         float: left;
+        opacity: .25;
+
+        &:hover {
+          opacity: 1;
+        }
 
         .caption {
           opacity: 0.0;
@@ -179,13 +263,18 @@ body.home {
       font-style: italic;
       color: $green;
     }
+
+    img {
+      width: 75%;
+      margin: 3em auto 0 auto;
+    }
   }
 
   .inner-container {
     max-width: 100%;
   	margin: 0 auto;
 
-  	@include bp (tablet) {
+  	@include bp (medium) {
   		max-width: 100%;
   	}
   }

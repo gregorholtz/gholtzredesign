@@ -1,18 +1,22 @@
 /* Footer
 -------------------------------------------------- */
 .footer {
-  padding: 1em;
   font-size: .8em;
   background-color: $green;
 
   .footer-container {
     max-width: 95%;
     margin: 0 auto;
-    padding: 1em 0;
+    padding: 2em 1em;
     overflow: auto;
 
-    @include bp ( tablet ){
-      max-width: 75%;
+    @include bp ( medium ){
+      max-width: 65%;
+      padding: 2em 0;
+    }
+
+    @include bp( large ) {
+      max-width: 45rem;
     }
 
     svg {
@@ -27,9 +31,9 @@
       margin-top: 4%;
       float: left;
 
-      @include bp ( tablet ) {
+      @include bp ( medium ) {
         margin-left: 3%;
-        margin-top: 2%;
+        margin-top: 1em;
       }
 
       a {
