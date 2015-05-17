@@ -23,7 +23,7 @@
 
         <div class="text">
 
-          <h2>Part Designer. Part Developer. Part Copywriter.</h2>
+          <h2>Part Designer. Part Developer.</h2>
           <h2>All about the story.</h2>
 
         </div>
@@ -77,9 +77,8 @@
           <h2>It can get messy, but concept is always king.</h2>
 
             <p>
-              Each new design problem requires a tailor-made solution. There are so many facets to consider. Who is this design going to benefit?
-              What sort of platform will it live on? Who is going to buy it? Is it even for sale? Is it permanent or time-based? These are all important
-              questions to consider when starting to plan a living, breathing design.
+              Each new design problem requires a tailor-made solution.
+              What sort of platform will it live on? Who is going to buy it? Is it even for sale? Is it permanent or time-based?
 
             </p>
 

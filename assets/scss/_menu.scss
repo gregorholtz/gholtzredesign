@@ -15,7 +15,7 @@
   @include bp ( tablet ) {
 
     nav {
-      width: 100%;
+      width: auto;
       float: right;
     }
 
@@ -52,11 +52,10 @@
 /* Header
 -------------------------------------------------- */
 header {
-  position: fixed;
+  position: absolute;
   width: 100%;
   padding: 1em;
   z-index: 10;
-  background-color: $white;
   opacity: .9;
 
   @include bp ( tablet ) {

@@ -2,7 +2,7 @@
 
 <div id="hero_image">
 
-  <img src="<?php echo $site->url() ?>/assets/images/desktop_placeholder.jpg">
+  <img src="<?php echo $site->url() ?>/assets/images/work.jpg">
 
 </div>
 

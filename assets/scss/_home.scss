@@ -32,6 +32,7 @@ body.home {
 
       h2 {
         font-size: 1.5em;
+        margin-bottom: 0;
 
       	@include bp( medium ) {
       		font-size: 2em;
@@ -194,6 +195,10 @@ body.home {
 
   #intro_paragraph {
     background-color: $white;
+
+    h2 {
+      margin-bottom: .5em;
+    }
   }
 
   #project_blocks {
@@ -261,6 +266,10 @@ body.home {
     img {
       width: 75%;
       margin: 3em auto 0 auto;
+    }
+
+    h2 {
+      margin-bottom: .5em;
     }
   }
 

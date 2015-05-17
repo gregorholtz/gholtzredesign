@@ -215,12 +215,17 @@ html {
   margin: 3em 0;
   height: 2px;
 }
-.main p,
+
 .main figure,
 .main ul,
 .main ol {
   margin-bottom: 2em;
 }
+
+.main p {
+  margin-bottom: 1em;
+}
+
 .main a {
   border-bottom: 2px solid $black;
 }
@@ -231,5 +236,10 @@ html {
 /* Text blocks */
 .text ul,
 .text ol {
-  margin-left: 1em;
+  list-style: none;
+  color: $black;
+
+  li {
+    margin-bottom: .5em;
+  }
 }
