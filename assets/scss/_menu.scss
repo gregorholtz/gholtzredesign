@@ -8,7 +8,7 @@
   opacity:0;
   transition:visibility 0s linear 0.5s,opacity 0.5s linear;
 
-  @include bp ( medium ) {
+  @include bp ( tablet ) {
 
     nav {
       float: right;
@@ -23,12 +23,13 @@
 
 .toggle {
   color: $white;
-  font-size: $base-font-size*3;
+  font-size: 45px;
   cursor: pointer;
   float: right;
   line-height: 1;
   transition: color 0.5s ease;
-  @include bp (medium){
+  @include bp ( tablet ) {
+    font-size: 54px;
     line-height: 1.5;
   }
   &:hover {
@@ -45,28 +46,38 @@
 
 /* Header
 -------------------------------------------------- */
-.header {
+header {
+  position: fixed;
+  width: 100%;
   padding: 1em;
-  margin-bottom: 1.5em;
+  z-index: 10;
+  background-color: $white;
+  opacity: .9;
 
-  @include bp ( medium ) {
+  @include bp ( tablet ) {
+    position: absolute;
     padding: 2em;
     background-color: transparent;
+    opacity: 1;
+  }
+  .toggle {
+    transition: color 0.5s ease;
+    color: $green;
+     &:hover {
+       color: $black;
+     }
   }
 
-  .toggle {
-    color: $green;
-  }
-}
-.logo {
-  display: block;
-  margin-bottom: 1.5em;
-  float: left;
-  svg {
-    width: 60px;
-    height: 100%;
-    @include bp (medium) {
-      width: 100px;
+  .logo {
+    display: block;
+    float: left;
+    svg {
+      width: 50px;
+      height: 100%;
+
+      @include bp ( tablet ) {
+        width: 100px;
+      }
     }
   }
 }

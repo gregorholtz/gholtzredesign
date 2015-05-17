@@ -1,11 +1,16 @@
 <?php snippet('header') ?>
 
+<div id="hero_image">
+
+  <img src="<?php echo $site->url() ?>/assets/images/desktop_placeholder.jpg">
+
+</div>
+
   <div class="inner-container">
 
     <main class="main" role="main">
 
       <div class="text">
-        <h1><?php echo $page->title()->html() ?></h1>
         <?php echo $page->text()->kirbytext() ?>
       </div>
 

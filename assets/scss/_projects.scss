@@ -36,7 +36,7 @@
     }
   }
 }
-.teaser .project {
+.teaser .project_block {
   margin-bottom: 1.5em;
   list-style: none;
   //height: 350px;
@@ -44,35 +44,22 @@
   padding-bottom: 2em;
   border-bottom: 2px solid $green;
 
-  &:nth-child(2n+1){
-    margin-left: 0;
-  }
-
-  &:nth-child(2n){
-    clear: right;
-  }
-
-  &:nth-child(2n+1){
-    clear: left;
-  }
-
-  li:first-child {
-    height: 160px;
-
-    @include bp ( medium ) {
-      height: 200px;
-    }
-  }
 }
-@include bp (medium) {
-  .teaser .project {
+@include bp (tablet) {
+  .teaser .project_block {
     float: left;
-    width: 47%;
-    margin-left: 5%;
     margin-bottom: 4em;
   }
-  .teaser li:first-child {
+
+  .teaser li {
+    width: 48%;
+  }
+  .project_block li:first-child {
     margin-left: 0;
+    float: left;
+  }
+  .project_block li:nth-child(2) {
+    float: right;
   }
 }
 
@@ -93,14 +80,41 @@
 }
 
 body.project {
+
+  header {
+    position: absolute;
+    width: 100%;
+    padding: 1em;
+    z-index: 10;
+
+    @include bp ( medium ){
+      padding: 2em;
+    }
+    .toggle {
+      transition: color 0.5s ease;
+       &:hover {
+         color: $black;
+       }
+    }
+  }
+
   main {
 
     .text, img {
       margin: 2em 0;
     }
 
+    figure {
+      background-image: url(../images/pattern.jpg);
+    }
+
     img {
       width: 100%;
+      transition: opacity .5s ease;
+
+      &:hover {
+        opacity: 0;
+      }
     }
 
     a {

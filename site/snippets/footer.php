@@ -1,5 +1,6 @@
   <footer class="footer cf" role="contentinfo">
     <div class="footer-container">
+      <a href="/">
       <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
          width="256.4863281px" height="214.6503906px" viewBox="0 0 256.4863281 214.6503906"
          enable-background="new 0 0 256.4863281 214.6503906" xml:space="preserve">
@@ -31,6 +32,7 @@
           v114.1289062H26.7978516z M229.6865234,164.3881836h-92.4023438V50.2592773h92.4023438V164.3881836z"/>
       </g>
       </svg>
+    </a>
 
       <div class="footer-text">
 

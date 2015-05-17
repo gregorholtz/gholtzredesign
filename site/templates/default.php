@@ -1,4 +1,12 @@
 <?php snippet('header') ?>
+
+  <div id="hero_image">
+
+    <?php $image_link = $page->images()->sortBy('sort', 'asc')->first() ?>
+
+    <img src="<?php echo $image_link->url() ?>">
+
+  </div>
   <div class="inner-container">
 
     <main class="main" role="main">

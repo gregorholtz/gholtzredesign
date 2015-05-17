@@ -27,10 +27,33 @@
 
 body.default {
 
+  header {
+    position: absolute;
+    width: 100%;
+    padding: 1em;
+    z-index: 10;
+
+    @include bp ( medium ){
+      padding: 2em;
+    }
+    .toggle {
+      transition: color 0.5s ease;
+       &:hover {
+         color: $black;
+       }
+    }
+  }
+
   main {
     img {
       width: 100%;
     }
   }
 
+}
+
+#hero_image {
+  img {
+    width: 100%;
+  }
 }

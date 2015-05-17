@@ -124,7 +124,7 @@
         </a>
 
         <a href="work/serene-alliance">
-          <div class="project" style="background-image: url('<?php echo url('content/2-work/7-serene-alliance/literature_pages.jpg') ?>');">
+          <div class="project" style="background-image: url('<?php echo url('content/2-work/3-serene-alliance/serenealliance.jpg') ?>');">
             <div class="caption">
               <h4>The Serene Alliance for Peace</h4>
             </div>
@@ -132,7 +132,7 @@
         </a>
 
         <a href="work/psu-college-of-the-arts-promos">
-          <div class="project" style="background-image: url('<?php echo url('content/2-work/6-psu-college-of-the-arts-promos/psucota.png') ?>');">
+          <div class="project" style="background-image: url('<?php echo url('content/2-work/4-psu-college-of-the-arts-promos/psucota.png') ?>');">
             <div class="caption">
               <h4>PSU College of the Arts Promo Videos</h4>
             </div>
@@ -146,7 +146,7 @@
 
             <h2>
 
-              <a href="/work">See more work.</a>
+              <a href="/work">See more work, if you'd like.</a>
 
             </h2>
 
