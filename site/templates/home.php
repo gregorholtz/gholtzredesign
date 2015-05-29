@@ -131,7 +131,7 @@
         </a>
 
         <a href="work/psu-college-of-the-arts-promos">
-          <div class="project" style="background-image: url('<?php echo url('content/2-work/4-psu-college-of-the-arts-promos/psucota.png') ?>');">
+          <div class="project" style="background-image: url('<?php echo url('content/2-work/4-psu-college-of-the-arts-promos/psucota.jpg') ?>');">
             <div class="caption">
               <h4>PSU College of the Arts Promo Videos</h4>
             </div>
